@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Odd Eve Java v4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Odd Eve Cricket</h1>
+
+<div id="screen-menu">
+  <select id="mode">
+    <option value="simple">Simple</option>
+    <option value="crazy">Crazy</option>
+    <option value="t20">T20</option>
+    <option value="odi">ODI</option>
+  </select>
+
+  <button onclick="doToss()">Toss</button>
+</div>
+
+<div id="screen-game" class="hidden">
+  <h2 id="status"></h2>
+  <div id="score">Score: 0/0</div>
+  <div id="over">Over: 0.0</div>
+  <div id="target"></div>
+
+  <div id="buttons"></div>
+
+  <p id="log"></p>
+</div>
+
+<div id="screen-result" class="hidden">
+  <h2 id="finalResult"></h2>
+  <button onclick="location.reload()">Play Again</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
